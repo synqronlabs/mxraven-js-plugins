@@ -1,6 +1,6 @@
 {
   "name": "@mxraven/handlebars",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Handlebars template renderer plugin for @mxraven/mail.",
   "keywords": [
     "email",
