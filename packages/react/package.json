@@ -1,6 +1,6 @@
 {
   "name": "@mxraven/react",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "React template renderer plugin for @mxraven/mail.",
   "keywords": [
     "email",
