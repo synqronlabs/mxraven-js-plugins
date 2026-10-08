@@ -10,9 +10,9 @@ TypeScript SDK. Each package adapts a template engine to the SDK's generic
 | --------------------- | ------------------------------- | --------- |
 | `@mxraven/react`      | React via `@react-email/render` | available |
 | `@mxraven/vue`        | Vue via `@vue-email/render`     | available |
-| `@mxraven/pug`        | Pug                             | planned   |
+| `@mxraven/handlebars` | Handlebars                      | available |
 | `@mxraven/mjml`       | MJML                            | planned   |
-| `@mxraven/handlebars` | Handlebars                      | planned   |
+| `@mxraven/pug`        | Pug                             | planned   |
 
 ## Contract
 
@@ -58,8 +58,9 @@ pnpm run check   # format, lint, typecheck, test, build
 
 ```
 packages/
-  react/   @mxraven/react
-  vue/     @mxraven/vue
+  react/       @mxraven/react
+  vue/         @mxraven/vue
+  handlebars/  @mxraven/handlebars
 ```
 
 ## License

@@ -6,19 +6,20 @@
 publishes small adapter packages that implement the `TemplateRenderer` contract
 exported by `@mxraven/mail` (see `synqronlabs/mxraven-js`).
 
-Each plugin turns an engine-specific input — a React element, a Vue node —
-into `{ html, text?, subject? }`. The core SDK and this repo are
-deliberately decoupled: plugins import only types from `@mxraven/mail`, so the
-core stays zero-dependency and can be released independently.
+Each plugin turns an engine-specific input — a React element, a Vue node, a
+Handlebars template — into `{ html, text?, subject? }`. The core SDK and this
+repo are deliberately decoupled: plugins import only types from `@mxraven/mail`,
+so the core stays zero-dependency and can be released independently.
 
 ## Packages
 
 - `packages/react` → `@mxraven/react` (React via `@react-email/render`)
 - `packages/vue` → `@mxraven/vue` (Vue via `@vue-email/render`)
+- `packages/handlebars` → `@mxraven/handlebars` (Handlebars)
 
-`packages/react` and `packages/vue` are implemented. The first task for any new
-adapter is to replace its throwing factory stub with the real renderer
-implementation and add tests.
+`packages/react`, `packages/vue`, and `packages/handlebars` are implemented.
+The first task for any new adapter is to replace its throwing factory stub with
+the real renderer implementation and add tests.
 
 ## Per-package conventions
 
@@ -29,11 +30,11 @@ implementation and add tests.
 - Engine framework stays a peer so consumers never get duplicates:
   `react`/`react-dom`, `vue`.
 - The engine's render library is a real dependency of the plugin:
-  `@react-email/render`, `@vue-email/render`.
+  `@react-email/render`, `@vue-email/render`, `handlebars`.
 - Every package builds dual ESM + CJS with declarations via the shared
   `tsdown.config.ts`, and publishes with provenance (`publishConfig`).
-- Public API is one factory function per package, e.g. `react()`, `vue()`.
-  Document it with TSDoc (`@public`) like the core repo does.
+- Public API is one factory function per package, e.g. `react()`, `vue()`,
+  `handlebars()`. Document it with TSDoc (`@public`) like the core repo does.
 
 ## Plugin contract
 

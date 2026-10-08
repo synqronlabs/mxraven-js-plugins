@@ -37,12 +37,13 @@ easier to review than broad ones.
 
 ### Repository layout
 
-| Path              | Contents                         |
-| ----------------- | -------------------------------- |
-| `packages/react/` | `@mxraven/react`: React adapter. |
-| `packages/vue/`   | `@mxraven/vue`: Vue adapter.     |
-| `packages/*/src`  | Sources and co-located tests.    |
-| `packages/*/dist` | Build output (not committed).    |
+| Path                   | Contents                           |
+| ---------------------- | ---------------------------------- |
+| `packages/react/`      | `@mxraven/react`: React adapter.   |
+| `packages/vue/`        | `@mxraven/vue`: Vue adapter.       |
+| `packages/handlebars/` | `@mxraven/handlebars`: Handlebars. |
+| `packages/*/src`       | Sources and co-located tests.      |
+| `packages/*/dist`      | Build output (not committed).      |
 
 ## Build and test
 
