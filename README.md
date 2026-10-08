@@ -2,15 +2,17 @@
 
 Official plugins for the [`@mxraven/mail`](https://github.com/synqronlabs/mxraven-js)
 TypeScript SDK. Each package adapts a template engine to the SDK's generic
-`TemplateRenderer` contract, so the core stays dependency-free and plugins can
-evolve independently.
+`TemplateRenderer` contract.
 
 ## Packages
 
-| Package          | Engine                          | Status  |
-| ---------------- | ------------------------------- | ------- |
-| `@mxraven/react` | React via `@react-email/render` | planned |
-| `@mxraven/vue`   | Vue via `@vue-email/render`     | planned |
+| Package               | Engine                          | Status    |
+| --------------------- | ------------------------------- | --------- |
+| `@mxraven/react`      | React via `@react-email/render` | available |
+| `@mxraven/vue`        | Vue via `@vue-email/render`     | available |
+| `@mxraven/pug`        | Pug                             | planned   |
+| `@mxraven/mjml`       | MJML                            | planned   |
+| `@mxraven/handlebars` | Handlebars                      | planned   |
 
 ## Contract
 
