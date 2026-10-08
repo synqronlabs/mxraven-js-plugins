@@ -16,9 +16,9 @@ core stays zero-dependency and can be released independently.
 - `packages/react` → `@mxraven/react` (React via `@react-email/render`)
 - `packages/vue` → `@mxraven/vue` (Vue via `@vue-email/render`)
 
-`packages/react` is implemented. `packages/vue` still contains a throwing
-factory stub; the first task per package is to replace the stub with the real
-renderer implementation and add tests.
+`packages/react` and `packages/vue` are implemented. The first task for any new
+adapter is to replace its throwing factory stub with the real renderer
+implementation and add tests.
 
 ## Per-package conventions
 
