@@ -45,6 +45,12 @@ await client.send(
 );
 ```
 
+## Examples
+
+Reference snippets for every adapter live in [`examples/`](./examples). For
+detailed, runnable examples of the SDK and the plugins, see
+[`synqronlabs/mxraven-examples`](https://github.com/synqronlabs/mxraven-examples).
+
 ## Development
 
 Requires `@mxraven/mail@0.2.2` or later.
