@@ -1,6 +1,6 @@
 {
   "name": "@mxraven/vue",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Vue template renderer plugin for @mxraven/mail.",
   "keywords": [
     "email",
